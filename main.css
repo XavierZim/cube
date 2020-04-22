@@ -1,0 +1,40 @@
+/*to define the basics of the sides of the square*/
+.side{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+
+/*this is the cube wrapper*/
+#cube{
+    position: absolute;
+    top: 50vh;
+    right: 50vw;
+    transform: rotatey(180deg);
+    transform-style: preserve-3d;
+}
+/*all of these are the sides and follow a pretty basic outline of just rotating the divs to make a square*/
+#front{
+    transform: translatez(90deg);
+    background-color: red;
+}
+#back{
+    transform: translatez(100px) rotatex(0deg) rotatez(0deg);
+    background-color: blue;
+}
+#top{
+    transform: translatez(50px) translatey(50px) rotatex(90deg);
+    background-color: green;
+}
+#bottom{
+    transform: translatez(50px) translatey(-50px) rotatex(90deg);
+    background-color: yellow;
+}
+#left{
+    transform: translatez(50px) translatex(-50px) rotatey(90deg);
+    background-color: purple;
+}
+#right{
+    transform: translatez(50px) translatex(50px) rotatey(90deg);
+    background-color: orange;
+}
